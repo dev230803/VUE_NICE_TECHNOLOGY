@@ -79,19 +79,24 @@ class HomeScreen extends StatelessWidget {
                       }
                       Enteredtext2.text = newValue;
                     },
-                    maxLength: 1000,
+                    maxLines: 7,
                     decoration: const InputDecoration(
-                       enabledBorder: UnderlineInputBorder(
+                      enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.black)
                       ),
-                      focusedBorder: UnderlineInputBorder(
+                      focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.black)
                       ),
                       hintText: 'Enter Text',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
                     ),
                   ),
                   const SizedBox(
-                    height: 7,
+                    height: 15,
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
