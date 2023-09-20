@@ -100,8 +100,7 @@ class HomeScreen extends StatelessWidget {
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         _formKey.currentState!.save();
-                         print('Input value: $Enteredtext');
-                        print('Input value: $Enteredtext2');
+                         
                       }
                     },
                     child: const Text('Submit',style: TextStyle(color: Colors.black),),
